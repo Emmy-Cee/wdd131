@@ -8,8 +8,6 @@ body {
     font-family: "Roboto Slab", serif;
     font-size: 1rem;
     color: #0e0c0c;
-    max-width: 425px;
-    margin: 0 auto;
 }
 
 header {
@@ -108,7 +106,7 @@ figure img {
     width: 300px;
     height: 190px;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 10px #00000026;
     grid-row: 1/2;
 }
 

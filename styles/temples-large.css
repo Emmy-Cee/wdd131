@@ -47,4 +47,9 @@
     #menu {
         display: none;
     }
+
+    footer p {
+        padding: 3px;
+        font-size: 1rem;
+    }
 }

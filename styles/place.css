@@ -1,3 +1,11 @@
+:root {
+    --header-bg: #CE1126;
+    --main-bg: #F4E9C8;
+    --aside-bg: #EDE4C0;
+    --aside-header: #228B22;
+    --text-color: #ffff;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -9,14 +17,14 @@ body {
 }
 
 header {
-    background-color: #CE1126;
+    background-color: var(--header-bg);
     text-align: center;
     padding: 10px;
     font-size: 1.5rem
 }
 
 main {
-    background-color: #F4E9C8;
+    background-color: var(--main-bg);
     text-align: center;
     margin-bottom: 0;
     padding-bottom: 0;
@@ -71,8 +79,8 @@ ul li{
 footer {
     text-align: center;
     padding: 15px 15px 15px 0;
-    background-color: #CE1126;
-    color: #ffffff;
+    background-color: var(--header-bg);
+    color: var(--text-color);
 }
 
 footer p {
@@ -87,7 +95,7 @@ footer p {
 
     main {
         position: relative;
-        background-color: #F4E9C8;
+        background-color: var(--main-bg);
         text-align: center;
     }
 
@@ -98,7 +106,7 @@ footer p {
 
     .aside {
         width: 400px;
-        background-color: #EDE4C0;
+        background-color: var(--aside-bg);
         opacity: 0.8;
         border-radius: 5px;
         text-align: center;
@@ -108,12 +116,12 @@ footer p {
 
     .aside h2 {
         width: 250px;
-        color: #fff;
+        color: var(--text-color);
         font-size: 2rem;
         margin-top: 10px;
         padding: 10px 0 10px 10px;
         text-align: left;
-        background-color: #228B22;
+        background-color: var(--aside-header);
     }
 
     .aside ul {

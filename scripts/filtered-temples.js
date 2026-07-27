@@ -118,7 +118,7 @@ oldBtn.addEventListener("click", () => {
 
 let newBtn = document.querySelector("#new");
 newBtn.addEventListener("click", () => {
-	createEachCard(temples.filter(temple => temple.dedicated.split(" ")[0] < "2000"))
+	createEachCard(temples.filter(temple => temple.dedicated.split(" ")[0] > "2000"))
 });
 
 let largeBtn = document.querySelector("#large");

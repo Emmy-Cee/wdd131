@@ -6,7 +6,7 @@
     --input-border: #ddd;
     --input-bg: #ffff;
     --input-text: #000;
-    --option-txt: #cc5500;
+    --option-txt: #4a2b0c;
 }
 
 * {
@@ -157,4 +157,11 @@ footer {
 footer p {
     padding: 1.5px;
     font-size: 1.1rem;
+}
+
+@media (max-width: 425px) {
+    .stars .star {
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
 }

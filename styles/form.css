@@ -1,0 +1,160 @@
+:root {
+    --header-bg: #CC5500;
+    --text: #fff;
+    --form-bg: #bd9c85;
+    --form-text: #333;
+    --input-border: #ddd;
+    --input-bg: #ffff;
+    --input-text: #000;
+    --option-txt: #cc5500;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Google Sans Flex", sans-serif;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    background-color: var(--header-bg);
+    color: var(--text);
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+main {
+    background-color: var(--form-bg);
+    border-radius: 5px;
+}
+
+.wfl {
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.wfl fieldset {
+    border: none;
+}
+
+.wfl label {
+    display: block;
+    margin-top: 5px;
+    padding: 5px;
+    font-size: 1.2rem;
+}
+
+input[type="text"],
+input[type="date"],
+.wfl select,
+.wfl textarea {
+    font-family: "Google Sans Flex", sans-serif;
+    display: block;
+    width: 100%;
+    padding: 9px;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.required {
+    color: #cc5500;
+}
+
+.wfl input:required {
+    border-left: 5px solid #cc5500;
+}
+
+.wfl input:required:valid {
+    border-left: 5px solid #00cc55;
+}
+
+.stars {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.stars label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 0;
+}
+
+/* Hide the real radio button */
+.stars input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.stars .star {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.wfl input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+}
+
+.wfl input[type="submit"] {
+    background-color: #333;
+    color: var(--text);
+    border: none;
+    padding: 10px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.italic {
+    display: block;
+    font-style: italic;
+}
+
+.option {
+    color: var(--option-txt);
+}
+
+section {
+    padding: 10px;
+    height: 300px;
+    margin-bottom: 10px;
+}
+section h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+section p {
+    text-align: left;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px 15px 15px 0;
+    background-color: #333;
+    color: var(--text);
+}
+
+footer p {
+    padding: 1.5px;
+    font-size: 1.1rem;
+}

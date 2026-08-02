@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Product Review Form - WDD 131</title>
+        <link rel="stylesheet" href="styles/form.css">
+        <script src="scripts/form.js" defer></script>
+        <meta name="description" content="This is a practice page for a learning activity to showcase the use of form with best practices and also localStorage in js">
+        <meta name="author" content="Emmanuel Anietie Atat">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand:wght@400..700&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Product Review Form</h1>
+        </header>
+        <main>
+            <form action="review.html" method="get" class="wfl">
+                <fieldset>
+                    <label for="product">
+                        Product Name <span class="required">*</span>
+                        <select name="product" id="product" title="Product Name" required>
+                            <option value="" disabled selected>Select a Product ...</option>
+                        </select>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <label>Overall Product Rating <span class="required">*</span></label>
+                    <div class="stars">
+                        <label for="product-rating-1">
+                            <span class="star">&star;</span>
+                            <input type="radio" name="rating" id="product-rating-1" value="1" required>
+                        </label>
+
+                        <label for="product-rating-2">
+                            <span class="star">&star;&star;</span>
+                            <input type="radio" name="rating" id="product-rating-2" value="2">
+                        </label>
+
+                        <label for="product-rating-3">
+                            <span class="star">&star;&star;&star;</span>
+                            <input type="radio" name="rating" id="product-rating-3" value="3">
+                        </label>
+
+                        <label for="product-rating-4">
+                            <span class="star">&star;&star;&star;&star;</span>
+                            <input type="radio" name="rating" id="product-rating-4" value="4">
+                        </label>
+
+                        <label for="product-rating-5">
+                            <span class="star">&star;&star;&star;&star;&star;</span>
+                            <input type="radio" name="rating" id="product-rating-5" value="5">
+                        </label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <label for="installation-date">
+                        Date of installation <span class="required">*</span>
+                        <input type="date" name="installation-date" id="installation-date" required>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <label>Which features did you find useful in the product? <span class="italic">(Check all that apply)</span></label>
+                    <label for="feature-1">
+                        <input type="checkbox" name="features" id="feature-1" value="Performance"> Performance
+                    </label>
+                    <label for="feature-2">
+                        <input type="checkbox" name="features" id="feature-2" value="Readability"> Readability
+                    </label>
+                    <label for="feature-3">
+                        <input type="checkbox" name="features" id="feature-3" value="Ease of use"> Ease of use
+                    </label>
+                    <label for="feature-4">
+                        <input type="checkbox" name="features" id="feature-4" value="Design"> Design
+                    </label>
+                    <label for="feature-5">
+                        <input type="checkbox" name="features" id="feature-5" value="Durability"> Durability
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <label for="written-review">
+                        Written Review <span class="option">(Optional)</span>
+                        <textarea name="written-review" id="written-review" rows="5" cols="30" placeholder="Write your review here..."></textarea>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <label for="your-name">
+                        Your Name <span class="option">(Optional)</span>
+                        <input type="text" name="name" id="your-name" title="Enter your name" placeholder="Enter your name">
+                    </label>
+                </fieldset>
+                <input class="submit" type="submit" value="Post Review">
+            </form>
+        </main>
+        <footer>
+            <p>&copy; <span id="currentyear"></span>🌴 Emmanuel Anietie Atat 🌴 Nigeria</p>
+            <p id="lastModified"></p>
+        </footer>
+    </body>
+</html>

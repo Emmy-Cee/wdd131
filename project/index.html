@@ -9,28 +9,33 @@
         <meta name="description" content="ShutterStart is an educational website designed for absolute beginners who want to improve their photography skills.">
         <meta name="author" content="Emmanueel Anietie Atat">
     </head>
-    <body>
+    <body class="homepage">
         <header>
             <div class="s-logo">
-                <img src="" alt="Site Logo" width="50" height="50">
+                <img src="images/logo.webp" alt="Site Logo" width="50" height="50">
                 <h1>ShutterStart 📸</h1>
             </div>
             <div class="hamburger">
-                <button id="menu"></button>
+                <button id="menu" aria-label="Open navigation menu"></button>
             </div>
         </header>
         <main>
-            <!-- Hint: Aspect ration for hero-img on mobile view = 1:2 -->
-            <!-- Hint: Aspect ration for hero-img on Tablet view = 1:1 -->
-            <!-- Hint: Aspect ration for hero-img on mobile view = 2:1 -->
-            <picture>
-                <source media="(min-width: 325px)" srcset="" width="" height="">
-                <source media="(min-width: 770px)" srcset="" width="" height="">
-                <source media="(min-width: 1000px)" srcset="" width="" height="">
-                <img src="" alt="basic best capture" width="1500" height="750">
-            </picture>
-            <section class="welcome-paragraph card">
-                <p>ShutterStart is an educational website designed for absolute beginners who want to improve their photography skills. The site provides clear, friendly, and practical information about:</p>
+            <div class="hero">
+                <!-- Hint: Aspect ration for hero-img on mobile view = 1:2 -->
+                <!-- Hint: Aspect ration for hero-img on Tablet view = 1:1 -->
+                <!-- Hint: Aspect ration for hero-img on mobile view = 2:1 -->
+                <picture>
+                    <source media="(min-width: 1000px)" srcset="images/hero-large.webp">
+                    <source media="(min-width: 500px)" srcset="images/hero-medium.webp">
+                    <img src="images/hero-small.webp" alt="Shutter start hero image" loading="lazy" width="1" height="1">
+                </picture>
+                <div class="hero-txt">
+                    <h1 class="welcome-msg">Welcome to ShutterStart</h1>
+                    <img class="svg" src="images/camera2.svg" alt="shutter icon">
+                </div>
+            </div>
+            <section class="card one">
+                <p><span class="italics">S</span>hutterStart is an educational website designed for absolute beginners who want to improve their photography skills. The site provides clear, friendly, and practical information about:</p>
                 <ul>
                     <li>Taking better photos with a smartphone</li>
                     <li>Understanding basic camera settings (aperture, shutter speed, ISO)</li>
@@ -40,22 +45,30 @@
                 </ul>
                 <p>The overall goal is to make photography feel approachable and fun rather than technical or intimidating.</p>
             </section>
-            <section class="smartphone-tips card">
-
+            <section class="card two">
+                <h2>📱 Smartphone Photography</h2>
+                <p>You don’t need an expensive camera to take great photos. Learn simple techniques that work with any phone — lighting, focus, composition, and more.</p>
+                <a href="tips.html">Explore Tips →</a>
             </section>
-            <section class="camera-basics card">
-
+            <section class="card three">
+                <h2>📷 Camera Basics</h2>
+                <p>Understand the three most important settings every beginner should know: Aperture, Shutter Speed, and ISO — explained in plain language.</p>
+                <a href="basics.html">Learn the Basics →</a>
             </section>
-            <section class="composition card">
-
+            <section class="card four">
+                <h2>🖼️ Composition Rules</h2>
+                <p>Discover easy rules like the Rule of Thirds, Leading Lines, and Framing that instantly make your photos more interesting and professional.</p>
+                <a href="composition.html">Improve Your Shots →</a>
             </section>
-            <section class="gallery-preview card">
-
+            <section class="card five">
+                <h2>✨ Gallery & Inspiration</h2>
+                <p>Get inspired by real photos taken by beginners. See what works, learn how each shot was captured, and start creating your own.</p>
+                <a href="gallery.html">View Gallery →</a>
             </section>
         </main>
         <footer>
-            <p>&copy; <span id="currentyear"></span>🌴 Emmanuel Anietie Atat 🌴 Nigeria</p>
+            <p>&copy; <span id="currentyear"></span>🌴 Emmanuel Anietie Atat 🌴 Nigeria | <a href="references.html">References</a></p>
             <p id="lastModified"></p>
         </footer>
     </body>
-</html
+</html>

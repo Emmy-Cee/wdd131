@@ -3,21 +3,57 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>edit - ShutterStart</title>
+        <title>Edit - ShutterStart</title>
         <link rel="stylesheet" href="styles/styles.css">
         <script src="scripts/script.js" defer></script>
-        <meta name="description" content="ShutterStart is an educational website designed for absolute beginners who want to improve their photography skills.">
+        <meta name="description" content="Learn simple photo editing tips and free apps for beginner photographers.">
         <meta name="author" content="Emmanueel Anietie Atat">
     </head>
-    <body>
+    <body class="enhanced">
         <header>
             <div class="s-logo">
-                <img src="" alt="Site Logo" width="50" height="50">
+                <img src="images/logo.webp" alt="Site Logo" width="50" height="50" loading="lazy">
                 <h1>ShutterStart 📸</h1>
             </div>
             <div class="hamburger">
-                <button id="menu"></button>
+                <button id="menu" aria-label="Open navigation menu"></button>
             </div>
         </header>
+        <main>
+            <h1>Editing Tips</h1>
+            <section class="card">
+                <h1>Editing Tips</h1>
+                <p>Editing helps your phone photos look cleaner, brighter, and more polished.</p>
+            </section>
+            <section class="card">
+                <h2>Crop and Straighten</h2>
+                <p>Remove distractions by cropping and make your horizon level for a polished look.</p>
+            </section>
+            <section class="card">
+                <h2>Adjust Exposure</h2>
+                <p>Brighten or darken the photo to keep the subject visible but avoid blowing out highlights.</p>
+            </section>
+            <section class="card">
+                <h2>Boost Contrast Carefully</h2>
+                <p>Contrast helps details pop, but too much can make the photo look harsh.</p>
+            </section>
+            <section class="card">
+                <h2>Use Saturation with Restraint</h2>
+                <p>Increase color slightly for life, then reduce it if the photo begins to feel fake.</p>
+            </section>
+            <section class="card">
+                <h2>Try an Editing Routine</h2>
+                <ol>
+                    <li>Crop and straighten</li>
+                    <li>Adjust brightness/exposure</li>
+                    <li>Increase contrast slightly</li>
+                    <li>Fine-tune color and sharpness</li>
+                </ol>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; <span id="currentyear"></span>🌴 Emmanuel Anietie Atat 🌴 Nigeria | <a href="references.html">References</a></p>
+            <p id="lastModified"></p>
+        </footer>
     </body>
 </html>

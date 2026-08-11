@@ -6,18 +6,63 @@
         <title>Basics - ShutterStart</title>
         <link rel="stylesheet" href="styles/styles.css">
         <script src="scripts/script.js" defer></script>
-        <meta name="description" content="ShutterStart is an educational website designed for absolute beginners who want to improve their photography skills.">
+        <meta name="description" content="Learn the camera basics every photography beginner should know: aperture, shutter speed, and ISO.">
         <meta name="author" content="Emmanueel Anietie Atat">
     </head>
-    <body>
+    <body class="enhanced">
         <header>
             <div class="s-logo">
-                <img src="" alt="Site Logo" width="50" height="50">
+                <img src="images/logo.webp" alt="Site Logo" width="50" height="50" loading="lazy">
                 <h1>ShutterStart 📸</h1>
             </div>
             <div class="hamburger">
-                <button id="menu"></button>
+                <button id="menu" aria-label="Open navigation menu"></button>
             </div>
         </header>
+        <main>
+            <h1>Basics</h1>
+            <section class="card">
+                <h1>Camera Basics</h1>
+                <p>These three settings help you control exposure and create the look you want.</p>
+            </section>
+            <section class="card">
+                <h2>Aperture</h2>
+                <p>Aperture controls how much light enters the lens and how much of the scene is in focus.</p>
+                <ul>
+                    <li>Lower number (f/1.8, f/2.8) = more light + blurrier background.</li>
+                    <li>Higher number (f/8, f/11) = less light + sharper background.</li>
+                </ul>
+            </section>
+            <section class="card">
+                <h2>Shutter Speed</h2>
+                <p>Shutter speed is how long the camera sensor sees light.</p>
+                <ul>
+                    <li>Fast speed freezes motion.</li>
+                    <li>Slow speed adds motion blur and works well for waterfalls or night shots.</li>
+                </ul>
+            </section>
+            <section class="card">
+                <h2>ISO</h2>
+                <p>ISO makes the camera more sensitive to light.</p>
+                <ul>
+                    <li>Lower ISO = cleaner photo in bright light.</li>
+                    <li>Higher ISO = brighter image in low light, but more noise.</li>
+                </ul>
+            </section>
+            <section class="card">
+                <h2>Practical Rule</h2>
+                <p>Start with a low ISO, set the aperture for the background look you want, then adjust shutter speed for correct brightness.</p>
+            </section>
+            <section class="card">
+                <h2>Quick Quiz</h2>
+                <p>Try this simple self-check from the browser.</p>
+                <button id="quiz-button">Show a quick quiz</button>
+                <p id="quiz-output">Press the button to see a camera basics prompt.</p>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; <span id="currentyear"></span>🌴 Emmanuel Anietie Atat 🌴 Nigeria | <a href="references.html">References</a></p>
+            <p id="lastModified"></p>
+        </footer>
     </body>
 </html>

@@ -9,15 +9,138 @@
         <meta name="description" content="ShutterStart is an educational website designed for absolute beginners who want to improve their photography skills.">
         <meta name="author" content="Emmanueel Anietie Atat">
     </head>
-    <body>
+    <body class="enhanced">
         <header>
             <div class="s-logo">
-                <img src="" alt="Site Logo" width="50" height="50">
+                <img src="images/logo.webp" alt="Site Logo" width="50" height="50">
                 <h1>ShutterStart 📸</h1>
             </div>
             <div class="hamburger">
-                <button id="menu"></button>
+                <button id="menu" aria-label="Open navigation menu"></button>
             </div>
         </header>
+        <main>
+            <h1>SmartPhone Photography Tips</h1>
+            <section class="card">
+                <h2>Smartphone Photography Basics</h2>
+                <p>You don’t need a professional camera to take great photos. Your smartphone is already a powerful tool. These simple tips will help you take clearer, more interesting photos using only your phone.</p>
+            </section>
+
+            <!-- Tip 1 -->
+            <section class="card">
+                <h2>1. Clean Your Lens</h2>
+                <p>Your phone camera sits in your pocket or bag, so the lens gets dirty easily. A dirty lens is the #1 reason photos look blurry or hazy.</p>
+                <p><strong>Tip:</strong> Wipe the lens gently with a soft microfiber cloth before taking important photos.</p>
+            </section>
+
+            <!-- Tip 2 -->
+            <section class="card">
+                <h2>2. Use Good Lighting</h2>
+                <p>Lighting is more important than the camera itself.</p>
+                <ul>
+                    <li><strong>Best light:</strong> Soft natural light (near a window or outdoors in the shade)</li>
+                    <li><strong>Avoid:</strong> Strong overhead indoor lights and harsh midday sun</li>
+                    <li><strong>Golden hours:</strong> Early morning or late afternoon give the most flattering light</li>
+                </ul>
+                <p><strong>Quick tip:</strong> Face your subject toward the light instead of placing the light behind them.</p>
+            </section>
+
+            <!-- Tip 3 -->
+            <section class="card">
+                <h2>3. Turn On the Grid</h2>
+                <p>Most phones have a grid option (usually under Camera Settings → Grid).</p>
+                <p>Turning on the grid helps you use the <strong>Rule of Thirds</strong> — place important parts of your photo along the lines or at the intersections instead of always in the center.</p>
+            </section>
+
+            <!-- Tip 4 -->
+            <section class="card">
+                <h2>4. Focus and Exposure</h2>
+                <p>Tap on the screen where you want the camera to focus. After tapping, you can usually slide your finger up or down to make the photo brighter or darker.</p>
+                <p><strong>Pro tip:</strong> Lock the focus by pressing and holding on the subject (on many phones this says “AE/AF Lock”).</p>
+            </section>
+
+            <!-- Tip 5 -->
+            <section class="card">
+                <h2>5. Avoid Digital Zoom</h2>
+                <p>Pinching to zoom reduces photo quality because the phone just crops the image.</p>
+                <p><strong>Better options:</strong></p>
+                <ul>
+                    <li>Walk closer to your subject</li>
+                    <li>Take the photo and crop it later while editing</li>
+                </ul>
+            </section>
+
+            <!-- Tip 6 -->
+            <section class="card">
+                <h2>6. Hold Your Phone Steady</h2>
+                <p>Blurry photos usually happen because of movement.</p>
+                <ul>
+                    <li>Hold the phone with both hands</li>
+                    <li>Tuck your elbows into your body</li>
+                    <li>Use a wall, table, or bag to stabilize</li>
+                    <li>Try the 3-second timer so you don’t shake the phone when pressing the shutter</li>
+                </ul>
+            </section>
+
+            <!-- Tip 7 -->
+            <section class="card">
+                <h2>7. Use Portrait Mode</h2>
+                <p>Portrait mode creates a blurred background that makes people and objects stand out.</p>
+                <p>It works best when:</p>
+                <ul>
+                    <li>You are 1–2 meters away from the subject</li>
+                    <li>There is good light</li>
+                    <li>The background is not too close to the subject</li>
+                </ul>
+            </section>
+
+            <!-- Tip 8 -->
+            <section class="card">
+                <h2>8. Try HDR</h2>
+                <p>HDR (High Dynamic Range) helps when there are both very bright and very dark areas in the same scene (for example, a bright sky and a darker building).</p>
+                <p>Turn HDR on when photographing landscapes or high-contrast scenes.</p>
+            </section>
+
+            <!-- Tip 9 -->
+            <section class="card">
+                <h2>9. Shoot in Burst Mode</h2>
+                <p>When photographing kids, pets, or any movement, hold down the shutter button to take many photos quickly. Later you can choose the best one.</p>
+            </section>
+
+            <!-- Tip 10 -->
+            <section class="card">
+                <h2>10. Edit Your Photos</h2>
+                <p>Even a quick edit can make a big difference. Free apps that work well for beginners:</p>
+                <ul>
+                    <li><strong>Snapseed</strong> – very powerful and free</li>
+                    <li><strong>Google Photos</strong> – simple adjustments</li>
+                    <li><strong>Lightroom Mobile</strong> – great for color</li>
+                </ul>
+                <p>Start with these basic edits:</p>
+                <ol>
+                    <li>Crop and straighten</li>
+                    <li>Adjust brightness / exposure</li>
+                    <li>Increase contrast slightly</li>
+                    <li>Adjust saturation carefully</li>
+                </ol>
+            </section>
+
+            <!-- Checklist -->
+            <section class="card">
+                <h2>Quick Checklist Before Taking a Photo</h2>
+                <fieldset>
+                    <label><input type="checkbox" name="bullet-list">Lens is clean</label>
+                    <label><input type="checkbox" name="bullet-list">Grid is turned on</label>
+                    <label><input type="checkbox" name="bullet-list">Subject is well lit</label>
+                    <label><input type="checkbox" name="bullet-list">You tapped to focus</label>
+                    <label><input type="checkbox" name="bullet-list">You are not using digital zoom</label>
+                    <label><input type="checkbox" name="bullet-list">You are holding the phone steady</label>
+                </fieldset>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; <span id="currentyear"></span>🌴 Emmanuel Anietie Atat 🌴 Nigeria | <a href="references.html">References</a></p>
+            <p id="lastModified"></p>
+        </footer>
     </body>
 </html>

@@ -12,12 +12,72 @@
     <body>
         <header>
             <div class="s-logo">
-                <img src="" alt="Site Logo" width="50" height="50">
+                <img src="images/logo.webp" alt="Site Logo" width="50" height="50">
                 <h1>ShutterStart 📸</h1>
             </div>
             <div class="hamburger">
-                <button id="menu"></button>
+                <button id="menu" aria-label="Open navigation menu"></button>
             </div>
         </header>
+        <main>
+            <h1>Resources</h1>
+            <section class="resources card">
+                <h2>Resources for Beginners</h2>
+                <p>Here are useful free apps, affordable gear, and learning materials to help you grow as a photographer.</p>
+            </section>
+
+            <!-- Resources will be injected here by JavaScript -->
+            <section class="rsc-container card">
+                <!-- Filter Buttons -->
+                <div class="filter">
+                    <h3>Filter Resources</h3>
+                    <div id="filter-buttons">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="app">Apps</button>
+                        <button class="filter-btn" data-filter="gear">Gear</button>
+                        <button class="filter-btn" data-filter="learning">Learning</button>
+                    </div>
+                </div>
+                <div id="resources-container"></div>
+            </section>
+
+            <!-- Favorites Section -->
+            <section class="fav-rsc card">
+                <h2>Your Favorite Resources</h2>
+                <div id="favorites-container">
+                    <p>You haven't saved any favorites yet.</p>
+                </div>
+            </section>
+
+            <!-- Contact / Newsletter Form -->
+            <section class="form card">
+                <h2>Get in Touch / Newsletter</h2>
+                <p>Have a question or want to receive monthly photography tips?</p>
+
+                <form id="contact-form" method="get">
+                    <label for="name">Name:
+                        <input type="text" id="name" name="name" required>
+                    </label>
+                    <label for="email">Email:
+                        <input type="email" id="email" name="email" required>
+                    </label>
+                    <label for="message">Message (optional):
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </label>
+                    <label>
+                        <input type="checkbox" id="subscribe" name="subscribe">
+                        Subscribe to monthly photography tips
+                    </label>
+
+                    <input type="submit" value="Submit Message">
+                </form>
+
+                <p id="form-message"></p>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; <span id="currentyear"></span>🌴 Emmanuel Anietie Atat 🌴 Nigeria | <a href="references.html">References</a></p>
+            <p id="lastModified"></p>
+        </footer>
     </body>
 </html>

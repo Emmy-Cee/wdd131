@@ -18,7 +18,7 @@ if (!navigation && hamburger) {
 
 const menuBtn = document.getElementById("menu");
 if (menuBtn && navigation) {
-    menuBtn.setAttribute("aria-expanded", "false");
+    menuBtn.setAttribute("aria-expanded", "true");
     menuBtn.setAttribute("aria-controls", "main-navigation");
 
     menuBtn.addEventListener("click", () => {
